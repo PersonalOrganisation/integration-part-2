@@ -1,0 +1,308 @@
+/*** Medias queries ****/
+@media screen and (max-width: 576px) {
+    ul.nav.nav-pills {
+        text-align: center !important;
+    }
+}
+@media screen and (min-width: 576px) {
+    a.navbar-brand {
+        width: 40% !important;
+    }
+    .navbar-brand img {
+        width: 80% !important;
+    }
+}
+@media screen and (min-width: 1200px) {
+    form {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+/*** Font face ****/
+@font-face {
+    font-family: 'Party Business';
+    src: url('../fonts/PartyBusiness.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Aniron';
+    src: url('../fonts/Aniron.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AnironB';
+    src: url('../fonts/Aniron-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'AnironC';
+    src: url('../fonts/AnironC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TengwarAnnatar';
+    src: url('../fonts/TengwarAnnatar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/**** All ****/
+#rewards, #hunters, #ring, #mordor, #contact {
+    border-top: 1px solid #000;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+body {
+    font-family: 'Party Business';
+}
+
+h3 {
+    font-family: 'AnironB';
+}
+
+h5 {
+    font-family: 'Party Business';
+}
+
+.h1 {
+    font-size: 3.5rem;
+}
+
+/**** Navbar ****/
+.navbar-nav .nav-link {
+    color: #fff !important;
+}
+.navbar-brand {
+    color: #fff !important;
+}
+.navbar {
+    background-color: #ff5602;
+}
+.navbar-nav a {
+    position: relative;
+}
+a.navbar-a {
+    color: #fff;
+    font-size: 1.5rem;  
+}
+.navbar-a a::after {
+    position: absolute;
+    padding-top: 10px;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: 0;
+    -webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+    -moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+    transition: height 0.3s, opacity 0.3s, transform 0.3s;
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+}
+#navbarNav {
+    justify-content: space-around;
+}
+.navbar-toggler {
+    font-size: 1.25rem;
+    padding: .15rem .65rem;
+    line-height: 1;
+    border: 1px solid #fff;
+    border-radius: .25rem;
+}
+a.navbar-brand {
+    margin-right: 0;
+    width: 80%;
+}
+.navbar-brand img {
+    width: 90%;
+}
+.fas.fa-bars {
+    color:white;
+    padding-top: 5px;
+}
+.navbar-til {
+    padding-left: 10px;
+    padding-right: 5px;
+    font-family: arial;
+    color: #fff;
+}
+
+/**** Carousel ****/
+h5.h1.text-uppercase {
+    margin-bottom: 0;
+}
+
+/**** Pills ****/
+#pills {
+    padding-top: 3rem;
+}
+#pills h3 {
+    padding-bottom: 20px;
+    padding-left: 30px;
+}
+.badge-pill {
+    font-size: 1rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.badge-pill:first-child {
+    background-color: #6C757D;
+}
+.badge-pill:hover {
+    background-color: #6C757D;
+    color: #fff;
+}
+#pills-cards {
+    background-image: url(img/bg_light.png);
+} 
+h3::before {
+    content: 'ij';
+    font-family: 'TengwarAnnatar';
+    font-style: italic;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 8px !important;
+    color: #ff5602;
+    padding-right: 10px;
+}
+h3::after {
+    content: 'ij';
+    font-family: 'TengwarAnnatar';
+    font-style: italic;
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 8px !important;
+    color: #ff5602;
+    padding-left: 10px;
+}
+a.text-secondary.is-active {
+    color: #ff5602 !important;
+}
+a.text-secondary:hover {
+    color: #ff5602 !important;
+}
+a.text-secondary::before {
+    content: 'b';
+    font-family: 'TengwarAnnatar';
+    font-style: italic;
+    font-size: 1.5rem;
+    position: relative;
+    color: #ff5602;
+    padding-right: 10px; 
+    padding-left: 10px;
+}
+a.text-secondary::after{
+    content: 'b';
+    font-family: 'TengwarAnnatar';
+    font-style: italic;
+    font-size: 1.5rem;
+    position: relative;
+    color: #ff5602;
+    padding-right: 10px; 
+    padding-left: 10px;
+}
+.is-active {
+background-color: unset !important;
+color: #ff5602 !important;
+text-decoration: underline !important;
+}
+
+/**** Cards Gandalf Overlay ****/
+.overlay {
+    position: relative;
+    cursor: pointer;
+    height: 373px;
+    display: flex;
+    justify-content: center;
+
+}
+.overlay img {
+    position: absolute;
+    width: 326px;
+    height: 373px;
+    opacity:1.7;
+    transition: opacity 1s;
+}
+img.card-img-top {
+    width: 100%;
+}
+.overlay:hover img {
+    opacity: 0.7;
+}
+.overlay h5 {
+    position: absolute;
+    font-size: 2rem;
+    color: #fff;
+    top: 200px;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+.gimli {
+    text-decoration: line-through #ff5602;
+}
+#gimli {
+    background: none;
+    color: #ff5602;
+}
+.overlay h6 {
+    position: absolute;
+    font-size: 1rem;
+    color: #000;
+    background-color: #fff;
+    opacity: 0.8;
+    padding: 20px 10px 20px 10px;
+    border-radius: 10px 10px;
+    top: 50px;
+    text-align: center;
+    z-index: 1;
+}
+.overlay:hover h6 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    top: 50px;
+    opacity: 0;
+}
+.overlay:hover h5 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    top: 35vh;
+}
+.card-body {
+    background-color: #000;
+    color: grey;
+}
+.card-text span {
+    color: #ff5602;
+}
+p span {
+    color: #FF6600;
+}
+.card-text span {
+    color: #ff5602;
+}
+.card-deck {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
